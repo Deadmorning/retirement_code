@@ -136,7 +136,7 @@ def handle_ddd(rowdata):
 	sellorder_time_1500 = sellorder.iloc[sellorder_time_index_1500]['成交额'].sum()
 
 
-	datatime=datetime.date.today()+datetime.timedelta(days=-1)
+	datatime=datetime.date.today()
 	reviewdata_list=[datatime,open_price,closed_price,today_change_precent,today_turnover,today_volume,turnover_500K_ration,buyorder_turnover,sellorder_sellorder,net_inflows,
 	buyorder_turnover_10M_sum,sellorder_turnover_10M_sum,buyorder_turnover_5M_sum,sellorder_turnover_5M_sum,buyorder_turnover_2M_sum,sellorder_turnover_2M_sum,buyorder_turnover_1M_sum,sellorder_turnover_1M_sum,buyorder_turnover_500K_sum,sellorder_turnover_500K_sum,buyorder_turnover_500000_sum,sellorder_turnover_500000_sum,
 	buyorder_time_0945,sellorder_time_0945,buyorder_time_1000,sellorder_time_1000,buyorder_time_1030,sellorder_time_1030,buyorder_time_1000,sellorder_time_1000,buyorder_time_1130,sellorder_time_1130,buyorder_time_1430,sellorder_time_1430,buyorder_time_1500,sellorder_time_1500,]
